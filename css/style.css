@@ -1,0 +1,164 @@
+/*RESET PÁGINA*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --blanco:#ffffff;
+    --verde:#d9fc0a;
+    --negro:#010101;
+    --rosa:#fc1197;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Redaction 50", serif;
+  color: var(--rosa);
+  background:var(--blanco);
+  overflow-x: hidden;
+}
+
+ul {
+     list-style: none; 
+     margin: 0; 
+     padding: 0; 
+}
+
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+img { 
+    max-width: 100%; 
+    display: block; 
+}
+
+.container { 
+    width: min(1100px, calc(100% - 2rem)); 
+    margin: 0 auto; }
+
+
+
+/* Encabezado */
+.header-RUDE {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--blanco); 
+  /* Cambia por el color de fondo de tu marca */
+  border-bottom: 1px solid #fc1197;
+}
+.header-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  gap: 1.5rem;
+}
+
+/* logo imágen*/
+.logo-RUDE {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0; /* Evita que el menú aplaste el logo */
+}
+
+.logo-RUDE img {
+  height: 135px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
+  width: auto;     
+  max-width: 200px; 
+  object-fit: contain;
+  display: block;
+}
+
+/* Navegación y lista en horizontal */
+.nav-RUDE {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.nav-RUDE ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.nav-RUDE a {
+  text-decoration: none;
+  color: #b42283;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+
+.nav-RUDE a:hover {
+  color: #eb25b0; /* Color principal de  TU MARCA*/
+}
+
+/* Botón de WhatsApp */
+.btn.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: #46eb25; /* Ajusta al color de tu marca */
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+
+.btn.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+
+.btn.primary svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Ajuste básico para celulares */
+@media (max-width: 768px) {
+  .header-inicio {
+    flex-wrap: wrap;
+    padding-block: 0.75rem;
+  }
+
+
+  .nav-RUDE {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+
+  .nav-RUDE ul {
+    gap: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+h1, h2, h3 {
+     font-family: "Redaction 50", serif;
+     color: var(--negro);
+     color: var(--rosa);
+     margin: 0; }
