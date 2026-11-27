@@ -165,7 +165,7 @@
               <h3>B@rbi3 b00Tz</h3>
               <p class="price">$700 MXN</p>
               <p class="description">La vida es mejor de ROSA</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Botas')">Ver producto</button>
             </div>
           </article>
 
@@ -178,7 +178,7 @@
               <h3>m1LaN B@g</h3>
               <p class="price">$690 MXN</p>
               <p class="description">La favorita de ella y él.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Bolsa')">Ver producto</button>
             </div>
           </article>
 
@@ -317,9 +317,10 @@
         <aside class="contact-info" aria-label="Datos de contacto">
           <ul>
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/lfabiaaaan?evlk=MWVrd3VyZTZ3dml3Yg==" target="_blank" rel="noopener noreferrer">@RuDe</a></li>
-            <li><i data-lucide="mail"></i> <a href="mailto:lf.cruz002@ebc.edu.mx">lf.cruz002@ebc.edu.mx/a></li>
+            <li><i data-lucide="mail"></i> <a href="mailto:lf.cruz002@ebc.edu.mx">lf.cruz002@ebc.edu.mx</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/Ug2vUSfdxn9817Fj7">Col.Doctores #207 </a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 19:00</li>
-          </ul>
+                      </ul>
         </aside>
       </div>
     </section>
@@ -333,6 +334,51 @@
     <p>© <span id="current-year"></span> RuDe. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+<!-- MODAL PPARA LOS PRODUCTOS -->
+ <div id="modal-Botas" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Botas-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/dropuno.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Botas ')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Botas-title"> B@rbie B00tz </h2>
+        <p class="price">$700 MXN</p>
+        <p>Botas de tacón en tonalidad rosa y detalles de intervensión a mano.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Tarjeta con tu mensaje</li>
+          <li>Selección de moda</li>
+          <li>Color de listón</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir la B@rbie B00tz. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<!--Modal para la tarjeta dos-->
+<div id="modal-Bolsa" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Bolsa-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/dropdos.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Bolsa ')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Bolsa-title"> m1LaN b@G </h2>
+        <p class="price">$690 MXN</p>
+        <p>Bolsa tamaño MAXI con intervenciones parchadas y tonalidades fluorecentes.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Tarjeta con tu mensaje</li>
+          <li>Selección de moda</li>
+          <li>Color de listón</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir la m1LaN b@G. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
 
 <script src="js/srcipt.js"></script>
 
